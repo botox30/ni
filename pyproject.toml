@@ -1,0 +1,15 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "stripe==12.3.0",
+    "hikari",
+    "hikari-lightbulb",
+    "hikari-miru",
+    "aiohttp",
+    "aiosqlite",
+    "jinja2",
+    "html2image"
+]

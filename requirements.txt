@@ -1,0 +1,17 @@
+
+stripe==12.3.0
+hikari==2.0.0
+hikari-lightbulb==2.3.5
+hikari-miru
+aiohttp
+aiosqlite
+jinja2
+html2image
+stripe
+beautifulsoup4
+aiosmtplib
+fastapi
+python-multipart
+uvicorn[standard]
+python-dateutil
+python-dateutil

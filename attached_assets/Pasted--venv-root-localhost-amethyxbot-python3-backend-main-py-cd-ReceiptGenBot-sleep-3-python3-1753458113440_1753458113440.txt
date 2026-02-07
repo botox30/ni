@@ -1,0 +1,60 @@
+(venv) root@localhost:~/amethyxbot# python3 backend/main.py & cd ReceiptGenBot && sleep 3 && python3 bot.py
+[3] 219558
+Database initialized successfully
+INFO:     Started server process [219558]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+[3]   Exit 1                  python3 backend/main.py  (wd: ~/amethyxbot)
+(wd now: ~/amethyxbot/ReceiptGenBot)
+Bot token found, starting Discord bot...
+
+  oooo         o8o  oooo                            o8o       光 2.0.0 [b5ce62d3]
+  `888         `"'  `888                            `"'       © 2021-present, davfsa - MIT license
+   888 .oo.   oooo   888  oooo   .oooo.   oooo d8b oooo       interpreter:   CPython 3.11.2
+   888P"Y88b  `888   888 .8P'   `P  )88b  `888""8P `888       running on:    x86_64 Linux 6.1.0-37-amd64
+   888   888   888   888888.     .oP"888   888      888       installed at:  /root/amethyxbot/venv/lib/python3.11/site-packages/hikari
+   888   888   888   888 `88b.  d8(  888   888      888       documentation: https://docs.hikari-py.dev/en/2.0.0
+  o888o o888o o888o o888o o888o `Y888""8o d888b    o888o      support:       https://discord.gg/Jx4cNGG
+
+Thank you for using lightbulb!
+W 2025-07-25 15:40:33,033 hikari.ux: You are running on optimization level 0 (no optimizations), which may slow down your application. For production, consider using at least level 1 optimization by passing `-O` to the python interpreter call
+Loading extensions...
+I 2025-07-25 15:40:33,164 lightbulb.app: Extension loaded 'cogs_rent.community'
+I 2025-07-25 15:40:33,169 lightbulb.app: Extension loaded 'cogs_rent.setup'
+Loaded cogs_rent extensions
+I 2025-07-25 15:40:33,171 lightbulb.app: Extension loaded 'cogs_dev.dev'
+I 2025-07-25 15:40:33,172 lightbulb.app: Extension loaded 'cogs_dev.restore_roles'
+Loaded cogs_dev extensions
+I 2025-07-25 15:40:33,174 lightbulb.app: Extension loaded 'cogs_shared.manual_sub'
+I 2025-07-25 15:40:33,175 lightbulb.app: Extension loaded 'cogs_shared.get_access'
+I 2025-07-25 15:40:33,176 lightbulb.app: Extension loaded 'cogs_shared.add_access'
+I 2025-07-25 15:40:33,176 lightbulb.app: Extension loaded 'cogs_shared.test_role'
+I 2025-07-25 15:40:33,178 lightbulb.app: Extension loaded 'cogs_shared.menu'
+I 2025-07-25 15:40:33,179 lightbulb.app: Extension loaded 'cogs_shared.remove_access'
+Loaded cogs_shared extensions
+All extensions loaded successfully
+I 2025-07-25 15:40:35,284 hikari.ux: A newer version of hikari is available, consider upgrading to 2.3.5
+I 2025-07-25 15:40:35,386 hikari.bot: you can start 989 sessions before the next window which starts at 2025-07-26 14:01:30.664593+00:00; planning to start 1 session...
+I 2025-07-25 15:40:35,550 hikari.gateway.0: identifying with new session
+I 2025-07-25 15:40:35,842 hikari.gateway.0: shard is ready: 1 guilds, receipts#6720 (1395875344686387240), session '8ea7c3cc2bbb73996abdb4c204bbfa9d' on v10 gateway
+Bot is starting up... User: receipts#6720
+Bot is in 1 guilds
+Role manager initialized
+E 2025-07-25 15:40:35,852 hikari.event_manager: an exception occurred handling an event (StartedEvent)
+Traceback (most recent call last):
+  File "/root/amethyxbot/ReceiptGenBot/bot.py", line 58, in on_start
+    await webserver.start()
+  File "/root/amethyxbot/venv/lib/python3.11/site-packages/aiohttp/web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1525, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5000): address already in use
+I 2025-07-25 15:40:36,199 lightbulb.internal: Processing guild application commands
+I 2025-07-25 15:40:36,442 lightbulb.internal: Processing application commands for guild 1395873913514229881
+I 2025-07-25 15:40:36,723 lightbulb.internal: Processing global application commands
+I 2025-07-25 15:40:36,929 lightbulb.internal: Application command processing completed
+I 2025-07-25 15:40:36,930 hikari.bot: started successfully in approx 1.75 seconds

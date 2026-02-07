@@ -1,0 +1,30 @@
+     | App [amethyx-backend:2] starting in -fork mode-
+PM2      | App [amethyx-backend:2] online
+2|amethyx-backend  | Traceback (most recent call last):
+2|amethyx-backend  |   File "/root/amethyxbot/backend/main.py", line 2, in <module>
+2|amethyx-backend  |     from fastapi import FastAPI, HTTPException
+2|amethyx-backend  | ModuleNotFoundError: No module named 'fastapi'
+PM2                | App [amethyx-backend:2] exited with code [1] via signal [SIGINT]
+PM2                | App [amethyx-bot:3] starting in -fork mode-
+PM2                | App [amethyx-bot:3] online
+3|amethyx-bot      | Traceback (most recent call last):
+3|amethyx-bot      |   File "/root/amethyxbot/ReceiptGenBot/bot.py", line 5, in <module>
+3|amethyx-bot      |     from dotenv import load_dotenv
+3|amethyx-bot      | ModuleNotFoundError: No module named 'dotenv'
+PM2                | App [amethyx-bot:3] exited with code [1] via signal [SIGINT]
+PM2                | App [amethyx-backend:2] starting in -fork mode-
+PM2                | App [amethyx-backend:2] online
+2|amethyx-backend  | Traceback (most recent call last):
+2|amethyx-backend  |   File "/root/amethyxbot/backend/main.py", line 2, in <module>
+2|amethyx-backend  |     from fastapi import FastAPI, HTTPException
+2|amethyx-backend  | ModuleNotFoundError: No module named 'fastapi'
+PM2                | App [amethyx-backend:2] exited with code [1] via signal [SIGINT]
+PM2                | Script /usr/bin/python3 had too many unstable restarts (5). Stopped. "errored"
+PM2                | App [amethyx-bot:3] starting in -fork mode-
+PM2                | App [amethyx-bot:3] online
+3|amethyx-bot      | Traceback (most recent call last):
+3|amethyx-bot      |   File "/root/amethyxbot/ReceiptGenBot/bot.py", line 5, in <module>
+3|amethyx-bot      |     from dotenv import load_dotenv
+3|amethyx-bot      | ModuleNotFoundError: No module named 'dotenv'
+PM2                | App [amethyx-bot:3] exited with code [1] via signal [SIGINT]
+PM2                | Script /usr/bin/python3 had too many unstable restarts (5). Stopped. "errored"
